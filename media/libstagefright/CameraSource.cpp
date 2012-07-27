@@ -34,6 +34,7 @@
 #ifdef ENHANCED_DOMX
 #include <OMX_TI_IVCommon.h>
 #endif
+
 namespace android {
 
 static const int64_t CAMERA_SOURCE_TIMEOUT_NS = 3000000000LL;
