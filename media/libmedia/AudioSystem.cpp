@@ -605,9 +605,9 @@ audio_io_handle_t AudioSystem::getOutput(audio_stream_type_t stream,
 extern "C" audio_io_handle_t _ZN7android11AudioSystem9getOutputE19audio_stream_type_tjjj27audio_policy_output_flags_t(audio_stream_type_t stream,
                                     uint32_t samplingRate,
                                     uint32_t format,
-                                    uint32_t channels,
+                                    uint32_t channelMask,
                                     audio_output_flags_t flags) {
-    return AudioSystem::getOutput(stream,samplingRate,(audio_format_t) format, channels, flags);
+    return AudioSystem::getOutput(stream,samplingRate,(audio_format_t) format, channelMask, flags);
 }
 
 status_t AudioSystem::startOutput(audio_io_handle_t output,
