@@ -53,15 +53,16 @@
 #include <OMX_QCOMExtns.h>
 #endif
 #include "include/avc_utils.h"
-#ifdef ENHANCED_DOMX
+
+#ifdef USE_SAMSUNG_COLORFORMAT
+#include <sec_format.h>
+#endif
+
+#ifdef TI_ENHANCED_DOMX
 #include <OMX_TI_Video.h>
 #include <OMX_TI_Index.h>
 #include <OMX_TI_IVCommon.h>
 #include <ctype.h>
-#endif
-
-#ifdef USE_SAMSUNG_COLORFORMAT
-#include <sec_format.h>
 #endif
 
 namespace android {
